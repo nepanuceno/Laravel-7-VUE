@@ -18,13 +18,29 @@
                         <my-painel titulo="Painel 1">Teste de conteúdo</my-painel>
                     </div>
                     <div class="col-md-4">
-                        <my-painel titulo="Painel 2">Teste de conteúdo</my-painel>
+                        <my-painel titulo="Painel 2" textStyle="text-success">Teste de conteúdo</my-painel>
                     </div>
                     <div class="col-md-4">
                         <my-painel titulo="Painel 3">Teste de conteúdo</my-painel>
                     </div>
                 </div>
             </my-painel>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <info-box></info-box>
+                </div>
+                <div class="col-md-4">
+                    <info-box></info-box>
+                </div>
+                <div class="col-md-4">
+                    <info-box></info-box>
+                </div>
+                <div class="col-md-4">
+                    <info-box></info-box>
+                </div>
+            </div>
+
 
         </div>
     </div>

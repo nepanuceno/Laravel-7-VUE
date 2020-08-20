@@ -22,6 +22,7 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('menu-topo', require('./components/Topo.vue').default);
 Vue.component('my-painel', require('./components/Painel.vue').default);
+Vue.component('info-box', require('./components/InfoBox.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

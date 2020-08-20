@@ -2,7 +2,7 @@
     <div class="card">
         <div class="card-header">{{ titulo }}</div>
 
-        <div class="card-body">
+        <div :class="styleColorBody">
             <slot></slot>
         </div>
     </div>
@@ -10,6 +10,20 @@
 
 <script>
     export default {
-       props: ['titulo']
+       props: ['titulo', 'textColor', 'bgColor', 'border', 'textStyle'],
+       computed: {
+            styleBgColor: function() {
+                return "card-body " + "bgColor";
+            },
+
+            styleColorBody: function(){
+                return "card-body " + (this.textStyle || "");
+            },
+
+            styleBorder: function() {
+                return "card " + (this.border || "");
+            }
+
+       }
     }
 </script>
